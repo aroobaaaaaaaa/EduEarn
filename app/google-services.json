@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "280855571554",
-    "project_id": "eduearn-7a35c",
-    "storage_bucket": "eduearn-7a35c.firebasestorage.app"
+    "project_number": "add project number",
+    "project_id": "add id",
+    "storage_bucket": "add here"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:280855571554:android:9f85a7fee0eb6ebd11353b",
+        "mobilesdk_app_id": "put here",
         "android_client_info": {
           "package_name": "com.example.owner.eduearn"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAMSLVZ0XF5GvokvcucCRTeIoMXUlJ6fuQ"
+          "current_key": "your key here"
         }
       ],
       "services": {
