@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FF"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- IMAGE -->
+        <ImageView
+            android:id="@+id/qImg"
+            android:layout_width="260dp"
+            android:layout_height="392dp"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/onboard1" />
+
+        <!-- TITLE -->
+        <TextView
+            android:id="@+id/qTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Welcome!"
+            android:textColor="#1A237E"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:id="@+id/qDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Create your profile, bid for jobs and grow your career with real time opportunities."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <!-- NEXT BUTTON (Screen 1 only) -->
+        <Button
+            android:id="@+id/qNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1A73E8"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- LOGIN BUTTON (Hidden on screen 1) -->
+        <Button
+            android:id="@+id/qLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1A73E8"
+            android:text="Already a member? Login"
+            android:visibility="gone"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- REGISTER BUTTON (Hidden on screen 1) -->
+        <Button
+            android:id="@+id/qRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#1A73E8"
+            android:text="Register"
+            android:visibility="gone"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

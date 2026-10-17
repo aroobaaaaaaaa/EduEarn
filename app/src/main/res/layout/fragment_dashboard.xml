@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/topNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#F5F5F5">
+
+        <ImageView
+            android:id="@+id/logoEduEarn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:contentDescription="EduEarn Logo"/>
+
+        <EditText
+            android:id="@+id/etSearchUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search users"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext"/>
+    </LinearLayout>
+
+    <!-- Job Form -->
+    <EditText
+        android:id="@+id/etJobTitle"
+        android:hint="Job Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/etJobDescription"
+        android:hint="Job Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/etJobSkills"
+        android:hint="Skills Required"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/btnPostJob"
+        android:text="Post Job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#2196F3"/>
+
+    <!-- Jobs List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerJobs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

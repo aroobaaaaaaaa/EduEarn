@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F8F9FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- 🔥 LOGO -->
+        <ImageView
+            android:id="@+id/appLogoLogin"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Login"
+            android:textColor="#1A237E"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_field"
+            android:hint="University Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_field"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <!-- 🔵 BLUE LOGIN BUTTON -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#1A73E8"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Sign Up Text -->
+        <TextView
+            android:id="@+id/tvGoToSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:text="Don't have an account? Sign up"
+            android:textColor="#1A73E8"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

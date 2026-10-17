@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F8F9FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- 🔥 BIGGER LOGO -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 🔹 Styling applied to ALL EditTexts -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_field"
+            android:hint="Full Name"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_field"
+            android:hint="University Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_field"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_field"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/etDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_field"
+            android:hint="Department (BS IT)"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/etSemester"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_field"
+            android:hint="Semester (6th)"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <!-- 🔵 BLUE BUTTON -->
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1A73E8"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
